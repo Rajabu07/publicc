@@ -1,0 +1,11 @@
+motor
+psutil
+uvloop; sys_platform != "win32"
+dnspython
+pyromod
+https://github.com/Ns-AnoNymouS/pyrogram-fork/archive/refs/heads/dev.zip
+tgcrypto-pyrofork
+telethon
+cryptg
+python-dotenv
+aiohttp

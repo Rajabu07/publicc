@@ -1,0 +1,33 @@
+{
+    "name": "Auto Approve Bot",
+    "description": "This is a telegram bot to approve your requests automatically.",
+    "repository": "https://github.com/amit05012/autoapprove",
+    "logo": "https://telegra.ph/file/00e88c1d4c8102d7d7669.jpg",
+    "keywords": ["best","auto", "approve","tg_Bot"],
+    "stack": "heroku-22",
+    "success_url": "https://t.me/AcceptRequest1Bot",
+    "env": {
+        "API_ID": {
+            "description": "Your API_ID, Get it from https://my.telegram.org/"
+        },
+        "API_HASH": {
+            "description": "Your API_HASH, Get it from https://my.telegram.org/"
+        },
+        "BOT_TOKEN": {
+            "description": "Get it from @BotFather"
+        },
+        "DATABASE_URL": {
+            "description": "Mongodb token for saving the users data"
+        },
+        "LOG_CHANNEL": {
+            "description": "A telegram channel id starting with -100 to send loggings",
+            "value": "-100",
+            "required": false
+        },
+        "OWNER_ID": {
+            "description": "auth users who have check bot status and can broadcast.",
+            "value": ""
+        }
+    },
+    "buildpacks": [{"url": "heroku/python"}]
+}
